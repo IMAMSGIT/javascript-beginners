@@ -2,3 +2,5 @@ frontend,backend,full stack
 web/mobile apps, real-time netwroking apps, comman line tools, games
 every browser has a javascript engine
 firefox: spidermonkey, chrome:v8
+javascript: programming language and specifies the specification
+ECMAScript : specification
