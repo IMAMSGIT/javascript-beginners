@@ -1,0 +1,4 @@
+frontend,backend,full stack
+web/mobile apps, real-time netwroking apps, comman line tools, games
+every browser has a javascript engine
+firefox: spidermonkey, chrome:v8
