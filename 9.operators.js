@@ -32,3 +32,7 @@
 // ex. false|| 'imam; // it'll print 'imam'
 // Reason: there exissts some truthy and fals valuse in JS(not true and false)
 // flasy(undefined, null, 0,false,'',NaN)
+// anything not truthy is falsy
+// false || 1|| 2 // prints 1,
+// Reason : whenever finds a true, executes it and the rest ignored
+// called short-circuiting
