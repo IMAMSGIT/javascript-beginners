@@ -6,7 +6,7 @@ while (i <= 10) {
 }
 console.log("------------------------------");
 let j = 0;
-while (j <= 10) {
+while (j <= 12) {
   if (j % 3 === 0) {
     j++;
     continue;
@@ -14,3 +14,4 @@ while (j <= 10) {
   console.log(j);
   j++;
 }
+// print the only numbers not divided by 3
