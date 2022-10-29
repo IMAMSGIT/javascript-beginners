@@ -2,7 +2,7 @@
 // by factory function, we can create many function simply
 function createCircle(radius) {
   return {
-    radius, // same as just radius
+    radius, // same as  radius :radius
     draw() {
       console.log("Draw");
     },
