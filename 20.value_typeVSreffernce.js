@@ -24,7 +24,25 @@ p.value = 20; // changing the value property of p
 //when we copy p to q, both p and q , points to the location
 let num = 2;
 function a(number) {
-  number++;
+  return number++;
 }
 a(num);
 console.log(num);
+// here num and number are different
+//  we hae passed num as the int type variable
+// but valuse not changed , because it is in local scope
+
+let obj = {
+  valueTop: 10,
+};
+
+function increase(objectShouldPass) {
+  obj.valueTop++;
+}
+
+increase(obj);
+console.log(obj);
+//here the obj object has been passed to increase function
+// it's one property increased inside the function
+// also affects the actual object
+// because both points to the same area
