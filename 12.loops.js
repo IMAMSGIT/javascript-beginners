@@ -38,7 +38,11 @@ for (let my in me) {
   console.log(my, me[my]);
 }
 
-const person = { fname: "John", lname: "Doe", age: 25 };
+const person = {
+  fname: "John",
+  lname: "Doe",
+  age: 25,
+};
 
 let text = "";
 for (let x in person) {
