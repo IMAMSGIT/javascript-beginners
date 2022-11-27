@@ -27,7 +27,7 @@ const audio = {
 };
 // When we inside the callback function, if we used this
 // because forEach is a regular function
-// we ouldn't get the desired result
+// we couldn't get the desired result
 
 audio.showTags();
 // 2nd rule
