@@ -1,5 +1,5 @@
 // method -> object itself
-// just a tregular function-> window object
+// just a regular function-> window object
 
 // 1st rule
 const video = {
