@@ -1,8 +1,7 @@
-// we can change type of variables
-// ## some abnormals to look
-
+let X = "Ian";
+let age = 30;
+let isApproved = false;
 let firstName = undefined;
-let selectColor = null;
-
-// here firstName assgined to undefined value
-// but selectColor assigned to null which is diferent from undefined
+let selectedColor = null;
+// To check the type
+console.log(typeof firstName);
