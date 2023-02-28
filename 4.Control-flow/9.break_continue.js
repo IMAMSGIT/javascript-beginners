@@ -10,8 +10,9 @@ let j = 0;
 while (j < 10) {
   if (j % 2 == 0) {
     j++;
-    continue;
+    continue; // when it matches, loops go up
   }
   console.log(j);
   j++;
 }
+// 1 3 5 7 9
