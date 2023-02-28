@@ -1,6 +1,5 @@
-function maxofTwo(x, y) {
-  if (x > y) return x;
-  else return y;
-}
-
 console.log(maxofTwo(3, 44));
+
+function maxofTwo(x, y) {
+  return x > y ? x : y;
+}
