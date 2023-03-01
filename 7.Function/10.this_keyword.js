@@ -41,4 +41,3 @@ const audio = {
     }, this);
   },
 };
-audio.showTags();
