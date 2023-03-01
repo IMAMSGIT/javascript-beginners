@@ -4,8 +4,9 @@ const courses = [
 ];
 
 let course = courses.find((course) => course.name === "a");
+let anotherCourse = courses.find((oneCourse) => oneCourse.name === "a");
 
-console.log(course);
+console.log(anotherCourse);
 
 //remove the function keyword
 // remoce the paranthesis , if one parameter
