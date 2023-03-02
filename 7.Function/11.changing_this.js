@@ -1,40 +1,47 @@
-// to solve the this problem
+// Continuin from the last topi 'the this keyword'
 
-// 1st solution but don't use it
-const video = {
-  title: "c",
-  tags: ["a", "b", "c"],
-  showTags() {
-    const self = this;
-    this.tags.forEach(function (tags) {
-      console.log(self.title, tags);
-    }, this);
-  },
-};
+// apply method and passing an object
+// it no object passed, 'this' will point to window
+// But the key difffernec is
+// call method method other parameters is passed as normal
+// but in apply , it is passed as an array
 
-video.showTags();
-
-// 2nd Solution
-function playVideo() {
-  roll: 2;
+function playVideo(a, b) {
   console.log(this);
 }
+playVideo.call({ name: "Imam" }, 1, 3);
+playVideo.apply({ name: "Imam" }, [1, 2]);
 
-playVideo.call({ name: "Imam", roll: 2 }); // call ->created a new object
-playVideo.apply({ name: "abc" }); // apply ->created a new object, second parameter needs to passed as an array
-playVideo.bind({ name: "def", roll: 55 })(); // return a function
+// bind method
+// but the method does not point to he playVideo  function
+// it returns a new function and sets to point
+// this new function
 
-// 3rd solution
+playVideo.bind({ name: "Imam" })();
 
-const videoAnother = {
-  title: "c",
-  tags: ["a", "b", "c"],
+//  1st solution of the solution is bind method
+const video = {
+  title: "a",
+  tags: ["a", "b", "c", "d"],
   showTags() {
-    this.tags.forEach((tags) => {
-      console.log(this.title, tags);
-    });
+    this.tags.forEach(
+      function (tag) {
+        console.log(this.title, tag);
+      }.bind(this)
+    );
   },
 };
+video.showTags();
 
-// we get same result , because arrow function inherits the object it is in
-videoAnother.showTags();
+// The modern solution
+// is to use callback function
+// No hassle of using bind method
+// arrow functions use this as default
+const audio = {
+  title: "a",
+  tags: ["a", "b", "c", "d"],
+  showTags() {
+    this.tags.forEach((tag) => console.log(this.title, tag));
+  },
+};
+video.showTags();
