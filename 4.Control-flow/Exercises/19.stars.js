@@ -5,5 +5,4 @@ function showStars(rows) {
     console.log(pattern);
   }
 }
-
 showStars(3);
